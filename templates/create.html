@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form action = "" method='POST'>{% csrf_token%}
+{{form.as_p}} <!--実際にデータを送るフォームをぴータグのなかに送る -->
+<input type="submit" value="作成する">
+
+</form>
+
+{% endblock content %}
